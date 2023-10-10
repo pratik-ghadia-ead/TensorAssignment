@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22146" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22122"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="186" id="KGk-i7-Jjw" customClass="ProfileImageCell" customModule="TensorAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-7D-qZL">
+                        <rect key="frame" x="110" y="20" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="hyf-TA-Wde"/>
+                            <constraint firstAttribute="width" constant="100" id="u2J-CI-JgE"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCe-cV-hZK">
+                        <rect key="frame" x="110" y="20" width="100" height="100"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                        <connections>
+                            <action selector="btnChooseImageTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="faV-L5-Xye"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JcL-7D-qZL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="4Bq-o4-qef"/>
+                    <constraint firstItem="JcL-7D-qZL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="67i-aA-8df"/>
+                    <constraint firstItem="JcL-7D-qZL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ssh-6q-FSf"/>
+                    <constraint firstItem="SCe-cV-hZK" firstAttribute="width" secondItem="JcL-7D-qZL" secondAttribute="width" id="Zxv-jx-lWq"/>
+                    <constraint firstItem="SCe-cV-hZK" firstAttribute="centerY" secondItem="JcL-7D-qZL" secondAttribute="centerY" id="b3B-O5-hRc"/>
+                    <constraint firstAttribute="bottom" secondItem="JcL-7D-qZL" secondAttribute="bottom" constant="10" id="kxJ-Re-Zqq"/>
+                    <constraint firstItem="SCe-cV-hZK" firstAttribute="centerX" secondItem="JcL-7D-qZL" secondAttribute="centerX" id="oD6-hE-9Bs"/>
+                    <constraint firstItem="SCe-cV-hZK" firstAttribute="height" secondItem="JcL-7D-qZL" secondAttribute="height" id="u1f-mR-LB4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="JcL-7D-qZL" id="7Kd-aw-Pej"/>
+            </connections>
+            <point key="canvasLocation" x="156" y="-23"/>
+        </tableViewCell>
+    </objects>
+</document>
